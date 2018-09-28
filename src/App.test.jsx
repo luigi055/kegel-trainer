@@ -1,10 +1,10 @@
-import react from 'react';
+import React from 'react';
 import { shallow } from 'enzyme';
 
-import { DummyComponent } from './App';
+import DummyComponent from './DummyComponent';
 
 describe('dummy test', () => {
   it('should generate a simple snapshot', () => {
-    const Wrapper = shallow(<DummyComponent />);
+    shallow(<DummyComponent />);
   });
 });
